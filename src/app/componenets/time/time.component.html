@@ -1,0 +1,33 @@
+
+<div class="attendance_in" *ngIf="isVisableIn">
+    <p>Welcome Mohammed!</p>
+  </div>
+  
+  <div class="attendance_workingOut" *ngIf="isTimeInOrOutWork">
+    <div class="outmessage">
+      <h1>Working Day End</h1>
+      <p>Attendance recording ends at 18:00</p>
+    </div>
+  
+  </div>
+  
+  <div class="attendance_out" *ngIf="isVisableOut">
+    <p>Bye Mohammed!</p>
+  </div>
+  
+  <div class="code_1">
+    <div class="grid_div">
+      <div class="btn_div">
+        <button class="btn btn-secondary fw-bold fs-3" id="btn1" (click)="addDigit(1)">1</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn2" (click)="addDigit(2)">2</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn3" (click)="addDigit(3)">3</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn4" (click)="addDigit(4)">4</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn5" (click)="addDigit(5)">5</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn6" (click)="addDigit(6)">6</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn7" (click)="addDigit(7)">7</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn8" (click)="addDigit(8)">8</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn9" (click)="addDigit(9)">9</button>
+        <button class="btn btn-secondary fw-bold fs-3" id="btn0" (click)="addDigit(0)">0</button>
+      </div>
+    </div>
+  </div>

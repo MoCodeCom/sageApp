@@ -1,0 +1,115 @@
+.code_1{
+    top:50px;
+    /*width: 100%;*/
+    /*right: auto;*/
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;   /* Centers vertically */
+    height: 100vh;        /* Full viewport height */
+      /*margin: 0;     */        /* Remove default body margin */
+    background-color: #f8f9fa;
+}
+
+.img_div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    
+}
+
+.attendance_in{
+    background-color: lightgreen;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+}
+
+
+.attendance_out{
+    background-color: lightcoral;
+    position:absolute;
+    display: flex;
+    width: 100%;
+}
+
+.attendance_workingOut{
+    background-color: lightcoral;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+}
+
+.outmessage{
+    display: block;
+    text-align: center;
+}
+
+.grid_div{
+
+    display: flex;             /* Flexbox for centering .btn_div */
+    justify-content: center;   /* Center horizontally */
+}
+
+.submit_div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#submit_btn{
+    display: none;
+}
+
+.btn_div{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap:10px;
+    align-items: center;
+
+}
+
+button{
+    margin: 10px;
+    height: 90px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form{
+    width: 50vh;
+}
+
+
+.input_code{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#btn0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row:4;
+}
+
+/*------------------------------------*/
