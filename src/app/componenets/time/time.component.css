@@ -1,10 +1,10 @@
 .code_1{
-    top:50px;
+    top:10px;
     /*width: 100%;*/
     /*right: auto;*/
     display: flex;
     justify-content: center; /* Centers horizontally */
-    align-items: center;   /* Centers vertically */
+    /*align-items: center;   /* Centers vertically */
     height: 100vh;        /* Full viewport height */
       /*margin: 0;     */        /* Remove default body margin */
     background-color: #f8f9fa;
@@ -36,11 +36,26 @@ img{
     width: 100%;
 }
 
+.attendance_in_incorrect{
+    background-color: rgb(141, 141, 141);
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+}
+
 
 .attendance_out{
     background-color: lightcoral;
     position:absolute;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    height: 100%;
     width: 100%;
 }
 
@@ -62,8 +77,8 @@ img{
 
 .grid_div{
 
-    display: flex;             /* Flexbox for centering .btn_div */
-    justify-content: center;   /* Center horizontally */
+    /*display: flex;             /* Flexbox for centering .btn_div */
+    /*justify-content: center;   /* Center horizontally */
 }
 
 .submit_div{
@@ -105,11 +120,27 @@ form{
 }
 
 #btn0{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     grid-column: 2;
     grid-row:4;
+}
+
+.dots{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dots div{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 
 /*------------------------------------*/

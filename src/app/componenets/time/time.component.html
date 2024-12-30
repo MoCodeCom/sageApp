@@ -1,22 +1,46 @@
 
 <div class="attendance_in" *ngIf="isVisableIn">
-    <p>Welcome Mohammed!</p>
+  <div class="outmessage">
+    <h1>{{nameEmp}} Signed In</h1>
+    <h1>Time : {{inOuttimeNow}}</h1>
   </div>
+</div>
   
   <div class="attendance_workingOut" *ngIf="isTimeInOrOutWork">
     <div class="outmessage">
-      <h1>Working Day End</h1>
+      <h1>System out of the service</h1>
       <p>Attendance recording ends at 18:00</p>
     </div>
   
   </div>
   
   <div class="attendance_out" *ngIf="isVisableOut">
-    <p>Bye Mohammed!</p>
+    <div class="outmessage">
+      <h1>{{nameEmp}}  Signed Out</h1>
+      <h1>Time : {{inOuttimeNow}}</h1>
+    </div>
+  </div>
+
+  <div class="attendance_in_incorrect" *ngIf="isVisableIncorrect">
+    <div class="outmessage">
+      <h1>Incorrect Code</h1>
+    <h1>Please try again</h1>
+    </div>
+
   </div>
   
   <div class="code_1">
+    
     <div class="grid_div">
+      <div class="dots">
+        <div [ngStyle]="{'background-color':backVis_1?'green':'transparent'}"></div>
+        <div [ngStyle]="{'background-color':backVis_2?'green':'transparent'}"></div>
+        <div [ngStyle]="{'background-color':backVis_3?'green':'transparent'}"></div>
+        <div [ngStyle]="{'background-color':backVis_4?'green':'transparent'}"></div>
+        <div [ngStyle]="{'background-color':backVis_5?'green':'transparent'}"></div>
+        <div [ngStyle]="{'background-color':backVis_6?'green':'transparent'}"></div>
+        <div [ngStyle]="{'background-color':backVis_7?'green':'transparent'}"></div>
+      </div>
       <div class="btn_div">
         <button class="btn btn-secondary fw-bold fs-3" id="btn1" (click)="addDigit(1)">1</button>
         <button class="btn btn-secondary fw-bold fs-3" id="btn2" (click)="addDigit(2)">2</button>
